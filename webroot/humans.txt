@@ -1,0 +1,1 @@
+Tazx is a PHP-boilerplate/framework for small websites. Tazx was built by Anders Haag as part of learning web programming.
