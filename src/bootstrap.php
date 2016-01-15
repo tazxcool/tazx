@@ -19,11 +19,12 @@ set_exception_handler('myExceptionHandler');
  *
  */
 function myAutoloader($class) {
-  $path = TAZX_INSTALL_PATH . "/src/{$class}/{$class}.php";
+  $path = TAZX_INSTALL_PATH . "/../src/{$class}/{$class}.php";
   if(is_file($path)) {
     include($path);
   }
   else {
+      echo $path;
     throw new Exception("Classfile '{$class}' does not exists.");
   }
 }

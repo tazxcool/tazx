@@ -1,0 +1,82 @@
+@import 'style.css';
+/**
+ * CSS sprite for navbar.
+ * 
+ */
+
+ 
+.navbar {
+    display: block;
+    background-color:#333;
+    padding: 0.2em 0.5em;
+    margin: 0 -9px;
+    font-weight: bold;
+}
+.navbar a {
+    background-color:#999;
+    color:#fff;
+    padding:0.2em 1em;
+    text-decoration:none;
+}
+.navbar a:hover {
+    background-color:#666;
+}
+.navbar ul li.selected a, .navbar ul li.selected-parent a {
+    background-color:#fff;
+    padding:0.3em 1em 0.5em 1em;
+    color:#333;
+}
+.navbar ul li.selected, .navbar ul li.selected-parent {
+    padding:0.3em 0 0.3em 0;
+}
+.navbar ul li li.selected {
+    padding:0;
+}
+.navbar ul li.selected-parent li.selected a {
+    background-color:#fff;
+    padding:0.2em 1em;
+    color:#333;
+}
+.navbar ul li.selected-parent li a {
+    background-color:#999;
+    padding:0.2em 1em;
+    color:#fff;
+}
+.navbar ul li.selected li a {
+    background-color:#999;
+    padding:0.2em 1em;
+    color:#fff;
+}
+.navbar ul {
+  list-style: none; 
+  margin: 0; 
+  padding: 0;
+}
+.navbar li {
+  display: inline-block;
+  position: relative;
+}
+.navbar ul ul {
+    padding: 10px 4px 10px 2px; 
+    position: absolute; 
+    left: -9999px; 
+    z-index: 2;
+}
+.navbar li li {
+    border-top: none;  
+    border-left: 4px solid transparent;  
+}
+.navbar li:hover ul {
+    left: 0;
+    background-color:#666;
+}
+.navbar li:hover li {
+    left: 0;
+}
+.navbar li:hover li a {
+    display: block;
+    min-width: 55px;
+}
+.navbar li.selected-parent li a:hover, .navbar li.selected li a:hover  {
+    background-color:#666;
+}
